@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mapViewFragment">
+
+    <fragment
+        android:id="@+id/mapViewFragment"
+        android:name="com.iukhan.ecp.Home.ui.PollingStation.MapViewFragment"
+        android:label="MapViewFragment" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.iukhan.ecp.Home.ui.news.NewsFragment"
+        android:label="NewsFragment">
+        <action
+            android:id="@+id/action_newsFragment_to_newsShowFragment2"
+            app:destination="@id/newsShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsShowFragment"
+        android:name="com.iukhan.ecp.Home.ui.news.NewsShowFragment"
+        android:label="fragment_news_show"
+        tools:layout="@layout/fragment_news_show" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.iukhan.ecp.Home.ui.Profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="com.iukhan.ecp.Home.ui.Team.TeamFragment"
+        android:label="fragment_team"
+        tools:layout="@layout/fragment_team" />
+    <fragment
+        android:id="@+id/tweetFragment"
+        android:name="com.iukhan.ecp.Home.ui.Tweets.TweetFragment"
+        android:label="fragment_tweet"
+        tools:layout="@layout/fragment_tweet" >
+        <action
+            android:id="@+id/action_tweetFragment_to_tweetShowFragment"
+            app:destination="@id/tweetShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.iukhan.ecp.Home.ui.Settings.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/tweetShowFragment"
+        android:name="com.iukhan.ecp.Home.ui.Tweets.TweetShowFragment"
+        android:label="TweetShowFragment" />
+
+</navigation>

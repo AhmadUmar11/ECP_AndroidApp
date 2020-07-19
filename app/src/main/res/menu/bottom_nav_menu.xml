@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mapViewFragment"
+        android:icon="@drawable/ic_map_24px"
+        android:title="@string/ps_location" />
+
+    <item
+        android:id="@+id/newsFragment"
+        android:icon="@drawable/ic_article_black_24dp"
+        android:title="@string/news" />
+
+    <item
+        android:id="@+id/tweetFragment"
+        android:icon="@drawable/ic_twitter_svgrepo_com"
+        android:title="@string/tweets" />
+    <item
+        android:id="@+id/teamFragment"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/team" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/icon_person"
+        android:title="Profile" />
+
+</menu>
